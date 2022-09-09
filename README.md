@@ -2,6 +2,9 @@
 Mobile Application Development
 
 
-Assignment 1 - PracGrader
+PracGrader
+-
 
-Assignment 2 - Automated Math Test
+Automated Math Test
+-
+- A mobile app to 
