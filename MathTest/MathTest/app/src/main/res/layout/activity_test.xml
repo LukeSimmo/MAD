@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnTestStartTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Start Test"
+        app:layout_constraintEnd_toStartOf="@+id/btnTestEnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelTestQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Question:"
+        app:layout_constraintStart_toStartOf="@+id/btnTestStartTest"
+        app:layout_constraintTop_toBottomOf="@+id/btnTestStartTest" />
+
+    <Button
+        android:id="@+id/btnTestEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="End Test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnTestStartTest"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTestQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@+id/labelTestQuestion"
+        app:layout_constraintTop_toTopOf="@+id/labelTestQuestion" />
+
+    <TextView
+        android:id="@+id/labelTestAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editTestAnswer"
+        app:layout_constraintStart_toStartOf="@+id/labelTestQuestion" />
+
+    <EditText
+        android:id="@+id/editTestAnswer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="Answer"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelTestAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/labelTestQuestion" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/testRecyler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTestSubmit" />
+
+    <Button
+        android:id="@+id/btnTestSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTestAnswer" />
+
+    <TextView
+        android:id="@+id/textScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/labelTestScore"
+        app:layout_constraintTop_toBottomOf="@+id/labelTestAnswer" />
+
+    <ProgressBar
+        android:id="@+id/progressBarTest"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTestStartTest" />
+
+    <TextView
+        android:id="@+id/labelTestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Score:"
+        app:layout_constraintStart_toStartOf="@+id/labelTestAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/labelTestAnswer" />
+
+    <TextView
+        android:id="@+id/labelTimeElapsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Time Elapsed:"
+        app:layout_constraintStart_toStartOf="@+id/labelTestScore"
+        app:layout_constraintTop_toBottomOf="@+id/labelTestScore" />
+
+    <TextView
+        android:id="@+id/textTotalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toEndOf="@+id/labelTimeElapsed"
+        app:layout_constraintTop_toTopOf="@+id/labelTimeElapsed" />
+</androidx.constraintlayout.widget.ConstraintLayout>
