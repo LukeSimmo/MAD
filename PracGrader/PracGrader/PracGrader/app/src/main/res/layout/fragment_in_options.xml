@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnInEditStudents"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Edit Students"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInMarkStudents"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Mark Students"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInEditStudents" />
+
+    <Button
+        android:id="@+id/btnInViewStudent"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="View Students"
+        app:layout_constraintStart_toEndOf="@+id/btnInEditStudents"
+        app:layout_constraintTop_toTopOf="@+id/btnInEditStudents" />
+
+    <Button
+        android:id="@+id/btnInSearchStudent"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Search Students"
+        app:layout_constraintStart_toEndOf="@+id/btnInMarkStudents"
+        app:layout_constraintTop_toBottomOf="@+id/btnInViewStudent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

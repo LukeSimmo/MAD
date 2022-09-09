@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editInDDigitThree"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toEndOf="@+id/editInDDigitTwo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInDUsername" />
+
+    <EditText
+        android:id="@+id/editInDDigitTwo"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toEndOf="@+id/editInDDigitOne"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInDUsername" />
+
+    <EditText
+        android:id="@+id/editInDDigitFour"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toEndOf="@+id/editInDDigitThree"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInDUsername" />
+
+    <EditText
+        android:id="@+id/editInDDigitOne"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toStartOf="@+id/editTextInDUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInDUsername" />
+
+    <TextView
+        android:id="@+id/labelInDPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pin:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editInDDigitOne"
+        app:layout_constraintStart_toStartOf="@+id/labelInDUsername" />
+
+    <TextView
+        android:id="@+id/labelTitleInstructorDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Instructor Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelInDName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editTextInDName"
+        app:layout_constraintStart_toStartOf="@+id/labelTitleInstructorDetails" />
+
+    <TextView
+        android:id="@+id/labelInDEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editTextInDEmail"
+        app:layout_constraintStart_toStartOf="@+id/labelInDName" />
+
+    <EditText
+        android:id="@+id/editTextInDName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelInDUsername"
+        app:layout_constraintTop_toBottomOf="@+id/labelTitleInstructorDetails" />
+
+    <TextView
+        android:id="@+id/labelInDUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editTextInDUsername"
+        app:layout_constraintStart_toStartOf="@+id/labelInDEmail" />
+
+    <EditText
+        android:id="@+id/editTextInDEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextInDName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInDName" />
+
+    <EditText
+        android:id="@+id/editTextInDUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextInDEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInDEmail" />
+
+    <TextView
+        android:id="@+id/labelInDCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country:"
+        app:layout_constraintStart_toStartOf="@+id/labelInDPin"
+        app:layout_constraintTop_toTopOf="@+id/spinnerInD" />
+
+    <Spinner
+        android:id="@+id/spinnerInD"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelInDCountry"
+        app:layout_constraintTop_toBottomOf="@+id/editInDDigitThree" />
+
+    <Button
+        android:id="@+id/btnInDConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerInD" />
+
+    <Button
+        android:id="@+id/btnInDBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInDConfirm" />
+</androidx.constraintlayout.widget.ConstraintLayout>

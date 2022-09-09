@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/labelEditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Edit User"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnEditBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEditConfirm" />
+
+    <TextView
+        android:id="@+id/labelEditName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editEName"
+        app:layout_constraintStart_toStartOf="@+id/labelEditTitle" />
+
+    <TextView
+        android:id="@+id/labelEditEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editEEmail"
+        app:layout_constraintStart_toStartOf="@+id/labelEditName" />
+
+    <TextView
+        android:id="@+id/labelEditUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editEUsername"
+        app:layout_constraintStart_toStartOf="@+id/labelEditEmail" />
+
+    <TextView
+        android:id="@+id/labelEditPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pin:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editEDigitOne"
+        app:layout_constraintStart_toStartOf="@+id/labelEditUsername" />
+
+    <TextView
+        android:id="@+id/labelEditCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country:"
+        app:layout_constraintStart_toStartOf="@+id/labelEditPin"
+        app:layout_constraintTop_toTopOf="@id/editCountrySpinner" />
+
+    <EditText
+        android:id="@+id/editEName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelEditUsername"
+        app:layout_constraintTop_toBottomOf="@+id/labelEditTitle" />
+
+    <EditText
+        android:id="@+id/editEEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editEName"
+        app:layout_constraintTop_toBottomOf="@+id/editEName" />
+
+    <Button
+        android:id="@+id/btnEditConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCountrySpinner" />
+
+    <Spinner
+        android:id="@+id/editCountrySpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/labelEditCountry"
+        app:layout_constraintTop_toBottomOf="@+id/editEDigitOne" />
+
+    <EditText
+        android:id="@+id/editEUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editEEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editEEmail" />
+
+    <EditText
+        android:id="@+id/editEDigitOne"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toStartOf="@+id/editEUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editEUsername" />
+
+    <EditText
+        android:id="@+id/editEDigitTwo"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toEndOf="@+id/editEDigitOne"
+        app:layout_constraintTop_toBottomOf="@+id/editEUsername" />
+
+    <EditText
+        android:id="@+id/editEDigitThree"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toEndOf="@+id/editEDigitTwo"
+        app:layout_constraintTop_toBottomOf="@+id/editEUsername" />
+
+    <EditText
+        android:id="@+id/editEDigitFour"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toEndOf="@+id/editEDigitThree"
+        app:layout_constraintTop_toBottomOf="@+id/editEUsername" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/ad_btnAedInstructors"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#99bbff"
+        android:text="Edit Instructors"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/ad_btnAedStudents"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#99bbff"
+        android:text="Edit Students"
+        app:layout_constraintStart_toStartOf="@+id/ad_btnAedInstructors"
+        app:layout_constraintTop_toBottomOf="@+id/ad_btnAedInstructors" />
+
+    <Button
+        android:id="@+id/ad_btnAedPracticals"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#99bbff"
+        android:text="Edit Practicals"
+        app:layout_constraintStart_toStartOf="@+id/ad_btnAedStudents"
+        app:layout_constraintTop_toBottomOf="@+id/ad_btnAedStudents" />
+
+    <Button
+        android:id="@+id/ad_btnMarkStudents"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#99bbff"
+        android:text="Mark Students"
+        app:layout_constraintStart_toStartOf="@+id/ad_btnAedPracticals"
+        app:layout_constraintTop_toBottomOf="@+id/ad_btnAedPracticals" />
+
+    <Button
+        android:id="@+id/ad_btnViewInstructors"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#99bbff"
+        android:text="View Instructors"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/ad_btnViewPracticals"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#99bbff"
+        android:text="View Practicals"
+        app:layout_constraintEnd_toEndOf="@+id/ad_btnViewStudents"
+        app:layout_constraintTop_toBottomOf="@+id/ad_btnViewStudents" />
+
+    <Button
+        android:id="@+id/ad_btnSearchStudents"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#99bbff"
+        android:text="Search Students"
+        app:layout_constraintEnd_toEndOf="@+id/ad_btnViewPracticals"
+        app:layout_constraintTop_toBottomOf="@+id/ad_btnViewPracticals" />
+
+    <Button
+        android:id="@+id/ad_btnViewStudents"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#99bbff"
+        android:text="View Students"
+        app:layout_constraintEnd_toEndOf="@+id/ad_btnViewInstructors"
+        app:layout_constraintTop_toBottomOf="@+id/ad_btnViewInstructors" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

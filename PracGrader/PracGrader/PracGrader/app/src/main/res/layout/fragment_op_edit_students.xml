@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnEditSt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editStName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelStUsername"
+        app:layout_constraintTop_toBottomOf="@+id/labelStTitle" />
+
+
+    <TextView
+        android:id="@+id/labelStTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Add Students"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/stName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editStName"
+        app:layout_constraintStart_toStartOf="@+id/labelStTitle" />
+
+
+    <TextView
+        android:id="@+id/labelStEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        app:layout_constraintStart_toStartOf="@+id/stName"
+        app:layout_constraintBaseline_toBaselineOf="@id/editStEmail"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <TextView
+        android:id="@+id/labelStUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:"
+        app:layout_constraintStart_toStartOf="@+id/labelStEmail"
+        app:layout_constraintBaseline_toBaselineOf="@id/editStUsername"
+        tools:layout_editor_absoluteY="155dp" />
+
+    <EditText
+        android:id="@+id/editStEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editStName"
+        app:layout_constraintTop_toBottomOf="@+id/editStName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <EditText
+        android:id="@+id/editStUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editStEmail"
+        app:layout_constraintTop_toBottomOf="@+id/editStEmail" />
+
+    <TextView
+        android:id="@+id/labelStPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pin:"
+        app:layout_constraintStart_toStartOf="@+id/labelStUsername"
+        app:layout_constraintBaseline_toBaselineOf="@id/editStPinOne"
+        tools:layout_editor_absoluteY="208dp" />
+
+    <EditText
+        android:id="@+id/editStPinOne"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toStartOf="@+id/editStUsername"
+        app:layout_constraintTop_toBottomOf="@+id/editStUsername" />
+
+    <EditText
+        android:id="@+id/editStPinTwo"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toEndOf="@+id/editStPinOne"
+        app:layout_constraintTop_toBottomOf="@+id/editStUsername" />
+
+    <EditText
+        android:id="@+id/editStPinThree"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toEndOf="@+id/editStPinTwo"
+        app:layout_constraintTop_toBottomOf="@+id/editStUsername" />
+
+    <EditText
+        android:id="@+id/editStPinFour"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="1"
+        android:gravity="center"
+        android:nextFocusForward="@id/etDigit3"
+        app:layout_constraintStart_toEndOf="@+id/editStPinThree"
+        app:layout_constraintTop_toBottomOf="@+id/editStUsername" />
+
+    <TextView
+        android:id="@+id/labelStCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="Country:"
+        app:layout_constraintStart_toStartOf="@+id/labelStPin"
+        app:layout_constraintTop_toTopOf="@+id/spinnerStCountry" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerStEdit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditSt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerStCountry" />
+
+    <Spinner
+        android:id="@+id/spinnerStCountry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnStAdd"
+        app:layout_constraintStart_toStartOf="@+id/editStPinOne"
+        app:layout_constraintTop_toBottomOf="@+id/editStPinThree" />
+
+    <Button
+        android:id="@+id/btnStAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Add"
+        app:layout_constraintStart_toEndOf="@+id/editStPinFour"
+        app:layout_constraintTop_toBottomOf="@+id/editStPinFour" />
+</androidx.constraintlayout.widget.ConstraintLayout>

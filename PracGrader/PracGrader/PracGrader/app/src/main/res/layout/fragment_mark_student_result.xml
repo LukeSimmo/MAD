@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/labelAddMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Mark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelMarkName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Username:"
+        app:layout_constraintStart_toStartOf="@+id/labelAddMark"
+        app:layout_constraintTop_toBottomOf="@+id/labelAddMark" />
+
+    <TextView
+        android:id="@+id/labelMarkPracname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Practical Name:"
+        app:layout_constraintStart_toStartOf="@+id/labelMarkName"
+        app:layout_constraintTop_toBottomOf="@+id/labelMarkName" />
+
+    <TextView
+        android:id="@+id/labelMarkIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editResultMark"
+        app:layout_constraintStart_toStartOf="@+id/labelMarkPracname" />
+
+    <TextView
+        android:id="@+id/textResultUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/labelMarkPracname"
+        app:layout_constraintTop_toBottomOf="@+id/labelAddMark" />
+
+    <TextView
+        android:id="@+id/textResultPracname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@+id/textResultUsername"
+        app:layout_constraintTop_toBottomOf="@+id/textResultUsername" />
+
+    <EditText
+        android:id="@+id/editResultMark"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/textResultPracname"
+        app:layout_constraintTop_toBottomOf="@+id/textResultPracname" />
+
+    <Button
+        android:id="@+id/btnResultAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editResultMark" />
+</androidx.constraintlayout.widget.ConstraintLayout>

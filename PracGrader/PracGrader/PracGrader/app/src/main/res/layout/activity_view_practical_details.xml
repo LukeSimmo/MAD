@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextPrDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextPrName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrName" />
+
+    <TextView
+        android:id="@+id/labelDPrDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editTextPrDesc"
+        app:layout_constraintStart_toStartOf="@+id/labelDPrName" />
+
+    <EditText
+        android:id="@+id/editTextPrName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelDPrDesc"
+        app:layout_constraintTop_toBottomOf="@+id/labelTitlePracticalDetails" />
+
+    <TextView
+        android:id="@+id/labelDPrName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editTextPrName"
+        app:layout_constraintStart_toStartOf="@+id/labelTitlePracticalDetails" />
+
+    <TextView
+        android:id="@+id/labelTitlePracticalDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Practical Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelDPrMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editTextPrMark"
+        app:layout_constraintStart_toStartOf="@+id/labelDPrDesc" />
+
+    <EditText
+        android:id="@+id/editTextPrMark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextPrDesc"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrDesc" />
+
+    <Button
+        android:id="@+id/btnPrConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Confirm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPrMark" />
+
+    <Button
+        android:id="@+id/btnPrBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrConfirm" />
+</androidx.constraintlayout.widget.ConstraintLayout>

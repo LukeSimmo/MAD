@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleEditPrac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Add Practical"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/labelPracNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Practical Name:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editPracticalNameEdit"
+        app:layout_constraintStart_toStartOf="@+id/titleEditPrac" />
+
+    <EditText
+        android:id="@+id/editPracticalNameEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelPracNameEdit"
+        app:layout_constraintTop_toBottomOf="@+id/titleEditPrac" />
+
+    <EditText
+        android:id="@+id/editPracticalDescEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editPracticalNameEdit"
+        app:layout_constraintTop_toBottomOf="@+id/editPracticalNameEdit" />
+
+    <TextView
+        android:id="@+id/labelDescEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editPracticalDescEdit"
+        app:layout_constraintStart_toStartOf="@+id/labelPracNameEdit" />
+
+    <TextView
+        android:id="@+id/labelMarkEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mark:"
+        app:layout_constraintBaseline_toBaselineOf="@id/editPracticalMarkEdit"
+        app:layout_constraintStart_toStartOf="@+id/labelDescEdit" />
+
+    <EditText
+        android:id="@+id/editPracticalMarkEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/btnPracticalAdd"
+        app:layout_constraintStart_toStartOf="@+id/editPracticalDescEdit"
+        app:layout_constraintTop_toBottomOf="@+id/editPracticalDescEdit" />
+
+    <Button
+        android:id="@+id/btnPracticalAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="add"
+        app:layout_constraintEnd_toEndOf="@+id/editPracticalDescEdit"
+        app:layout_constraintTop_toBottomOf="@+id/editPracticalDescEdit" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addPracticalRecycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnPracticalBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editPracticalMarkEdit" />
+
+    <Button
+        android:id="@+id/btnPracticalBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/btnColour"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
